@@ -1,11 +1,11 @@
 /*
-a- A condição de parada ocorre quando o valor de “qtd” é igual a 0.
-b- Para chegar ao resultado do texto invertido utilizando a função de “subtring”
- precisamos obter a última posição do caractere da variável “texto”. Através do 
- “length” é possível obter esse valor e definir o range em que a função “subtring” 
- irá trabalhar, no processo de decrementar o valor de “qtd” em cada iteração do 
- programa o mesmo armazena em "texto" e passa para o novo valor de “qtd”. 
- Com isso, exibe o valor final e ao chegar no valor = 0 ele entra para condição 
+a- A condiÃ§Ã£o de parada ocorre quando o valor de â€œqtdâ€ Ã© igual a 0.
+b- Para chegar ao resultado do texto invertido utilizando a funÃ§Ã£o de â€œsubtringâ€
+ precisamos obter a Ãºltima posiÃ§Ã£o do caractere da variÃ¡vel â€œtextoâ€. AtravÃ©s do 
+ â€œlengthâ€ Ã© possÃ­vel obter esse valor e definir o range em que a funÃ§Ã£o â€œsubtringâ€ 
+ irÃ¡ trabalhar, no processo de decrementar o valor de â€œqtdâ€ em cada iteraÃ§Ã£o do 
+ programa o mesmo armazena em "texto" e passa para o novo valor de â€œqtdâ€. 
+ Com isso, exibe o valor final e ao chegar no valor = 0 ele entra para condiÃ§Ã£o 
  de parada.
 
  */
@@ -15,6 +15,7 @@ public class InverterString {
 	public String inversor (String texto, int qtd) {
 		if (qtd == 0) {
 			return "";
+			//williamMeirelles 
 		}
 		else {
 			return texto.substring(qtd - 1, qtd) + inversor(texto, qtd - 1);
